@@ -185,7 +185,7 @@ def display_course():
 
     greetings1.destroy()
 
-#adding data to the database and on the treeview
+#adding student data to the database and on the treeview
 def add_student():
     global ssis_db
     global idnumber_entry, name_entry, gender_entry, yearlvl_entry, courseCode_entry 
@@ -387,6 +387,7 @@ def delete_all():
     for data in TreeView.get_children():
         TreeView.delete(data)
 
+#selecting course record for update
 def select_CrecordU():
     global CtreeView
     global courseCode_Centry, course_Centry
